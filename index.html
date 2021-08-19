@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Tracker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href=".\assets\css\style.css">
 </head>
-<body>
-  
 
-<script src=".\assets\js\script.js"></script>
+<body>
+    <container>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Instructions</h5>
+                <p class="card-text">Click the button below to open a form and provide information for the following.
+                </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Project Tracker</li>
+                <li class="list-group-item">Keeps Your Upcoming Projects Organized</li>
+                <li class="list-group-item">Due Date: 08-18-2021</li>
+                <li class="list-group-item">Hourly Rate: $100</li>
+            </ul>
+            <div class="card-body"></div>
+            <!-- Button trigger modal -->
+            <button type="button" id="modalB" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+            </button>
+        </div>
+    </container>
+
+    <container>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Project Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Project Name">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Project Type</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Project Type">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput3" class="form-label">Hourly Rate</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter Hourly Rate">
+        </div>
+        <div class=mb-3>
+            <label for="formGroupExampleInput4" class="form-label">Due Date</label>
+            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Enter Due Date">
+        </div>
+    </container>
+
+
+    <script src=".\assets\js\script.js"></script>
 </body>
+
 </html>
